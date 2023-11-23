@@ -1,11 +1,20 @@
-import React from 'react';
+import React ,{ useState } from 'react';
 import Card from 'react-bootstrap/Card';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import '../Styles/CardSlider2.css';
 import Uk from '../../assets/UK.jpg';
+import { FaMapMarkerAlt } from 'react-icons/fa';
+
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
 
 const CardSlider = () => {
+ 
+  const [selectedDate, setSelectedDate] = useState(null);
+
+
+  
   const cardData = [
     {
       title: 'Card 1',
@@ -13,6 +22,7 @@ const CardSlider = () => {
       image:Uk,
       price: 100,
       discount: 10,
+   
      
     },
     {
@@ -95,11 +105,30 @@ const CardSlider = () => {
              <img src={item.image} alt={item.title} className="card-img" />
            </div>
            <div className="lower-half">
-             <div className="text-container">{item.text}</div>
+              <div className="location-container">
+                <FaMapMarkerAlt  className='location_ic' /> &nbsp;
+                <span className="text-container">{item.text}</span>
+              </div>
              <div className="price-container">
-               <p>Price: ${item.price}</p>
-               <p>Discount: {item.discount}%</p>
+             
+             <DatePicker
+        selected={selectedDate}
+        onChange={(date) => setSelectedDate(date)}
+        dateFormat="MMMM d, yyyy"
+        isClearable
+        showYearDropdown
+        scrollableMonthYearDropdown
+        showIcon
+        className="compact-datepicker"
+      />
+   
+
+     
+               {/* <p>Discount: {item.discount}%</p> */}
              </div>
+             <div>
+               <p>Price: ${item.price}</p>
+               </div>
            </div>
          </Card>
         ))}

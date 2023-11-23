@@ -158,8 +158,14 @@
   .lower-half {
     display: flex;
     flex-direction: column;
-    padding: 40px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+  
     background-color: #fff;
+  }
+  .lower-half div{
+    margin-bottom: 5px;
   }
   
   .text-container {
@@ -171,3 +177,10 @@
     justify-content: space-between;
   }
   
+  .location_ic{
+    margin-left: 0px;
+    width: 30px;
+    height: 30px;
+    /* margin-right: 10px; */
+    color: red;
+  }
