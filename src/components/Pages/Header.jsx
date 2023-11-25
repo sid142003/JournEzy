@@ -11,10 +11,10 @@ const Header = () => {
            
             <div className="center-content">
                 <div className="search-text">
-                    <a href="#">Apply Visa </a>
+                    <a href="#">Customized Trips </a>
                 </div>
                 <div className="departure-text search-text ">
-                    <a href="#" >Explore</a>
+                    <a href="#" >Group Trips</a>
                 </div>
                 <div className="destination-text search-text">
                     <a href="#">About Us</a>

@@ -13,8 +13,10 @@ import CardSlider4 from '../Pages/CardSlider4';
 
 
 
+
 const Home = () => {
 	const countryOptions = [
+		// { value: '', label: 'Select Destination...' },
 		{ value: 'dubai', label: 'Dubai' },
 		{ value: 'usa', label: 'USA' },
 		{ value: 'uk', label: 'UK' },
@@ -51,13 +53,13 @@ const Home = () => {
 			<div className="body-content">
        
 			<div className="body-content-left">
-				<p className='bd_h'>Apply for Visa</p>
+				<p className='bd_h'>Travel To</p>
 				<div className='mq'>
-          	<marquee direction = "up" height="100px"><h1>Travelling To</h1> <br /> <h2>somewhere</h2></marquee>
+          	<marquee direction = "up" height="100px"><h1>Experience</h1> <br /> <h2>Explore</h2><br /> <h3>Escape</h3></marquee>
 				</div>
 		  
           <div className="country-dropdown">
-            <Select options={countryOptions} styles={customStyles} placeholder="Select Country"/>
+            <Select options={countryOptions} styles={customStyles} placeholder="Select Destination..."/>
           </div>
         </div>
   
@@ -65,49 +67,51 @@ const Home = () => {
       <div class="stats-item">
         <span class="stats-item__logo icon-intro-slider-tours"></span>
         <div class="stats-item__details">
-          <div class="stats-item__details__title">24,000+</div>
-          <div class="stats-item__details__caption">Travel Experiences</div>
+          <div class="stats-item__details__title fo">100% Customized </div>
+          <div class="stats-item__details__caption fo">Trips</div>
         </div>
       </div>
       <div class="stats-item">
         <span class="stats-item__logo icon-globe"></span>
         <div class="stats-item__details">
-          <div class="stats-item__details__title">55+</div>
-          <div class="stats-item__details__caption">Countries</div>
+          <div class="stats-item__details__title">Exclusive</div>
+          <div class="stats-item__details__caption">Experiences</div>
         </div>
       </div>
       <div class="stats-item">
         <span class="stats-item__logo icon-savings"></span>
         <div class="stats-item__details">
-          <div class="stats-item__details__title">Best Price</div>
-          <div class="stats-item__details__caption">Guaranteed</div>
+          <div class="stats-item__details__title">Dedicated</div>
+          <div class="stats-item__details__caption">Concierge</div>
         </div>
       </div>
-      <div class="stats-item">
+      {/* <div class="stats-item">
         <span class="stats-item__logo icon-group"></span>
         <div class="stats-item__details">
           <div class="stats-item__details__title">84 Million+</div>
           <div class="stats-item__details__caption">Users Per Year</div>
         </div>
-      </div>
+      </div> */}
     </div>
        
-	<div className='cs'>
-	  <CardSlider3 />
-	  <CardSlider2 />
 	
-	  <CardSlider />
-	</div>
-
         {/* <TestimonialSlider />
         <SContainer /> */}
         <div className="whatsapp-button" onClick={openWhatsApp}>
         <FaWhatsapp size={32} />
        
         </div>
+        
       </div>
-	  
+      <div className='cs'>
+	  <CardSlider2 className="cs1"  />
+	  <CardSlider3 />
+	
+	  <CardSlider />
+	</div>
+
 	  </div>
+    
 	)
 }
 

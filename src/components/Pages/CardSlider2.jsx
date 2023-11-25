@@ -53,7 +53,7 @@ const CardSlider = () => {
     
     // <Element name="section1" className="section">
     <div  className="testimo-card-slider">
-      <h1>Trending This Winter</h1>
+      <h1>Indian Experiences</h1>
       {/* <div className='B'>  */}
       <Carousel
         additionalTransfrom={0}
