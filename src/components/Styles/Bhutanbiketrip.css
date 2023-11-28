@@ -1,0 +1,165 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+   color: white;
+    font-weight: bold;
+    /* overflow: hidden; */
+}
+.bbt_container{
+    background: url("../../assets/highway.jpg") no-repeat center center/cover;
+    /* background-color: black; */
+        /* width: 100%; */
+    height: 85vh;
+    margin: 0 50px 0 50px;
+    display: flex;
+     ;
+    flex-direction: column;  
+    justify-content:  space-between;
+    align-items: center;
+   
+    /* mask: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)); */
+
+
+
+}
+.bbt_container::before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* margin: 0 50px 0 50px; */
+   height: 20vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(235, 231, 231, 0.4));
+  
+  }
+  .bbt_container::after {
+  
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50px; /* Adjust this value to set the margin from the left side */
+    width: calc(100% - 100px); 
+  
+   height: 85vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4));
+  
+  }
+.hr{
+    position: absolute;
+    top: 50px;
+    width: 70vw;
+    height: 1px;
+    background-color: white;    
+}
+.bbt_container_upper{
+    margin: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around   ;
+    align-items: center;
+    
+}
+.bbt_container_middle{
+    position: absolute;
+    top:3.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around   ;
+    align-items: center;
+
+}
+.hr2{
+    position: absolute;
+    top: 6rem;
+    width: 70vw;
+    height: 1px;
+    background-color: white;    
+}
+.bbt_headertext{
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+}
+.bbt_container_lower{
+    position: relative;
+    
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.bbt_container_lower_left{
+    position: relative;
+    width: 100%;
+    display: flex;
+    bottom: 50px;
+    left: -5rem;
+    flex-direction: row;
+    justify-content: center   ;
+    align-items: center;
+}
+.bbt_container_lower_right{
+    position: relative;
+    width: 100%;
+    display: flex;
+    bottom: 50px;
+    left: -20rem;
+    flex-direction: row;
+    justify-content: center   ;
+    align-items: center;
+}
+.btt_container_lowest{
+    position: absolute;
+    /* width: 100%; */
+    display: flex;
+    left: 10rem;
+    /* bottom: 50px; */
+    flex-direction: row;
+    /* justify-content: space-around      ; */
+    align-items: center;
+
+}
+.btt_container_lowest div{
+   padding-right: 10rem;
+
+}
+
+.header_options_row {
+    color: white;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .header_options_row::after {
+    content: '';
+    color: white;
+    position: absolute;
+    /* left: 80%; */
+    transform: translateX(-50%); /* Center the underline below the text */
+    bottom: -2px; /* Adjust this value to control the distance of the underline from the text */
+    width: 0; /* Set the initial width to 0 */
+    height: 4px; /* Adjust this value to control the thickness of the underline */
+    background-color: transparent; /* Initial color of the underline */
+    transition: width 0.3s, background-color 0.3s; /* Add a smooth transition effect for width and color */
+  }
+  
+  .header_options_row:hover {
+    color: red; /* Change the text color to red on hover */
+  }
+  
+  .header_options_row:hover::after {
+    left: 10%;
+    width: 80%; /* Set the width to 100% on hover to extend the underline */
+    background-color: red; /* Adjust this value to set the color of the underline on hover */
+    
+  }
+
+ 
