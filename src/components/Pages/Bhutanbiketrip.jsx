@@ -1,4 +1,9 @@
-import React , {useState} from 'react';
+import React , {useState ,  useRef } from 'react';
+import Overview from './Overview';
+import InEx from './InEx';
+import Highlights from './Highlights';
+import Itinerary from './Itinerary';
+import PickupPoint from './PickupPoint';
 
 import "../Styles/Bhutanbiketrip.css"
 import CallIcon from '@mui/icons-material/Call';
@@ -13,11 +18,12 @@ import Modalsearchbar from './Modalsearchbar';
 import "bootstrap/dist/css/bootstrap.min.css";
 
 
-
-
-
 const  Bhutanbiketrip= ()=> {
-
+  const overviewRef = useRef(null);
+  const inExRef = useRef(null);
+  const itineraryRef = useRef(null);
+  const highlightsRef = useRef(null);
+  const pickupPointRef = useRef(null);
 
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -27,6 +33,10 @@ const  Bhutanbiketrip= ()=> {
 
   const handleCloseModal = () => {
     setIsModalOpen(false);
+  };
+
+  const scrollToComponent = (ref) => {
+    ref.current.scrollIntoView({ behavior: 'smooth' });
   };
   
   return (
@@ -103,20 +113,21 @@ const  Bhutanbiketrip= ()=> {
 
   <div className='btt_container_lowest underline-on-hover' >
 
-<div className="header_options_row underline-on-hover">
+<div className="header_options_row underline-on-hover" onClick={() => scrollToComponent(overviewRef)}>
   Overview
 </div>
-<div className="header_options_row underline-on-hover">
+
+<div className="header_options_row underline-on-hover" onClick={() => scrollToComponent(inExRef)}>
   Inclusion
 </div>
-<div className="header_options_row underline-on-hover">
+<div className="header_options_row underline-on-hover" onClick={()=> scrollToComponent(highlightsRef)}>
+  Highlights
+</div>
+<div className="header_options_row underline-on-hover"  onClick={() => scrollToComponent(itineraryRef)}>
   Itinerary
 </div>
-<div className="header_options_row underline-on-hover">
-  Price
-</div>
-<div className="header_options_row underline-on-hover">
-  FAQ
+<div className="header_options_row underline-on-hover"  onClick={()=> scrollToComponent(pickupPointRef)}>
+  Pickup Point
 </div>
 
 
@@ -124,21 +135,29 @@ const  Bhutanbiketrip= ()=> {
 
 
 </div>
+
 
 
   </div>
 {isModalOpen && <Modalsearchbar onClose={handleCloseModal} />}
 
-
-
-
-
-
-
-
-
-
-      
+<div className='yz'>
+        <div ref={overviewRef}>
+          <Overview />
+        </div>
+        <div ref={inExRef}>
+          <InEx />
+        </div>
+        <div ref={highlightsRef}>
+          <Highlights />
+        </div>
+        <div ref={itineraryRef}>
+          <Itinerary />
+        </div>
+        <div ref={pickupPointRef}>
+          <PickupPoint />
+          </div>
+</div>
     </>
   )
 }
