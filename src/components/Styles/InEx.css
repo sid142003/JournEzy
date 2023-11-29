@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.In_head h1{
+    color: #e8464c;
+    font-size: 40px;
+    font-weight: normal;
+    line-height: 1.2;
+    display: flex;
+    align-items: start;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.In_mainDiv{
+    display: block;
+}
+
+.In_container{
+    display: flex;
+    margin-left: 100px;
+}
+
+.contain_left , .contain_right{
+    flex: 1;
+}
+
+.contain_left p , .contain_right p{
+    font-size: larger;
+}
+
+.In_list ul{
+    color: black;
+    font-weight: lighter;
+}
+
+.te {
+    margin-left: 35px;
+}

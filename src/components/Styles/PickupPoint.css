@@ -1,0 +1,19 @@
+.Pick_head h1{
+    color: #e8464c;
+    font-size: 40px;
+    font-weight: normal;
+    line-height: 1.2;
+    display: flex;
+    align-items: start;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.pick_container{
+    margin-left: 100px;
+   height: 500px;
+}
+
+.pick_container p {
+    font-weight: lighter;
+}
