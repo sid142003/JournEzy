@@ -93,7 +93,7 @@ const  Bhutanbiketrip= ()=> {
 <div className="bbt_container_lower">
 
 <div className="bbt_container_lower_left">
-  <h2>Bhutan Trip</h2>
+  <h2  className='bbt_head'>Bhutan Trip</h2>
   </div>
 
   <div className="bbt_container_lower_right">

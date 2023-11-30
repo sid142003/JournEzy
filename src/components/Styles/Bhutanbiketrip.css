@@ -109,12 +109,16 @@
 .bbt_container_lower_right{
     position: relative;
     width: 100%;
+    color: white;
     display: flex;
     bottom: 50px;
     left: -20rem;
     flex-direction: row;
     justify-content: center   ;
     align-items: center;
+}
+.bbt_container_lower_right p{
+  color: white;
 }
 .btt_container_lowest{
     position: absolute;
@@ -165,5 +169,10 @@
   .yz{
     width: 70vw;
   }
-
+.bbt_head{
+    font-size: 3.5rem;
+    font-weight:500;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
  

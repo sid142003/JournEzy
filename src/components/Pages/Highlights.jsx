@@ -17,12 +17,12 @@ function Highlights() {
                             <ul><GradeIcon style={{fill:"red"}}/> Sightseeing and Excursions as per the itinerary</ul>
                             <ul><GradeIcon style={{fill:"red"}}/>Sightseeing and Excursions as per the itinerary</ul>
     
-                            <ul>Sightseeing and Excursions as per the itinerary</ul>
-                            <ul>Sightseeing and Excursions
+                            <ul><GradeIcon style={{fill:"red"}}/> Sightseeing and Excursions as per the itinerary</ul>
+                            <ul><GradeIcon style={{fill:"red"}}/> Sightseeing and Excursions
                             as per the itinerary</ul>
 
-                            <ul>Sightseeing and Excursions as per the itinerary</ul>
-                            <ul>Sightseeing and Excursions as per the itinerary</ul>
+                            <ul><GradeIcon style={{fill:"red"}}/> Sightseeing and Excursions as per the itinerary</ul>
+                            <ul><GradeIcon style={{fill:"red"}}/> Sightseeing and Excursions as per the itinerary</ul>
 
                             </div>
 

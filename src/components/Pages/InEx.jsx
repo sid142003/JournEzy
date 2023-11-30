@@ -18,11 +18,11 @@ function InEx() {
                         <ul><CheckCircleIcon style={{fill:"green"}}/>Sightseeing and Excursions as per the itinerary</ul>
                         <ul><CheckCircleIcon style={{fill:"green"}}/>Sightseeing and Excursions as per the itinerary</ul>
 
-                        <ul>Sightseeing and Excursions as per the itinerary</ul>
-                        <ul>Sightseeing and Excursions as per the itinerary</ul>
+                        <ul><CheckCircleIcon style={{fill:"green"}}/>Sightseeing and Excursions as per the itinerary</ul>
+                        <ul><CheckCircleIcon style={{fill:"green"}}/>Sightseeing and Excursions as per the itinerary</ul>
 
-                        <ul>Sightseeing and Excursions as per the itinerary</ul>
-                        <ul>Sightseeing and Excursions as per the itinerary</ul>
+                        <ul><CheckCircleIcon style={{fill:"green"}}/>Sightseeing and Excursions as per the itinerary</ul>
+                        <ul><CheckCircleIcon style={{fill:"green"}}/>Sightseeing and Excursions as per the itinerary</ul>
                     
                 </div>
             </div>
@@ -33,11 +33,11 @@ function InEx() {
                         <ul><RemoveCircleIcon style={{fill:"red"}}/> Sightseeing and Excursions as per the itinerary</ul>
                         <ul><RemoveCircleIcon style={{fill:"red"}}/>Sightseeing and Excursions as per the itinerary</ul>
 
-                        <ul>Sightseeing and Excursions as per the itinerary</ul>
-                        <ul>Sightseeing and Excursions as per the itinerary</ul>
+                        <ul><RemoveCircleIcon style={{fill:"red"}}/>Sightseeing and Excursions as per the itinerary</ul>
+                        <ul><RemoveCircleIcon style={{fill:"red"}}/>Sightseeing and Excursions as per the itinerary</ul>
 
-                        <ul>Sightseeing and Excursions as per the itinerary</ul>
-                        <ul>Sightseeing and Excursions as per the itinerary</ul>
+                        <ul><RemoveCircleIcon style={{fill:"red"}}/>Sightseeing and Excursions as per the itinerary</ul>
+                        <ul><RemoveCircleIcon style={{fill:"red"}}/>Sightseeing and Excursions as per the itinerary</ul>
 
                   </div>      
             </div>
