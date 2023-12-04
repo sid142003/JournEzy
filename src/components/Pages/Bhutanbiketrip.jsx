@@ -4,6 +4,7 @@ import InEx from './InEx';
 import Highlights from './Highlights';
 import Itinerary from './Itinerary';
 import PickupPoint from './PickupPoint';
+import Footer from './Footer';
 
 import "../Styles/Bhutanbiketrip.css"
 import CallIcon from '@mui/icons-material/Call';
@@ -158,6 +159,8 @@ const  Bhutanbiketrip= ()=> {
           <PickupPoint />
           </div>
 </div>
+
+<Footer/>
     </>
   )
 }
